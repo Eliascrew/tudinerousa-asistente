@@ -1,0 +1,9 @@
+# Sitio estático en la raíz del repositorio, sin paso de build.
+[build]
+  publish = "."
+
+# Se declara explícitamente para que el directorio de funciones nunca dependa
+# de la autodetección.
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
